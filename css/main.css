@@ -1,0 +1,645 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #f5f5f5;
+    width:100%;
+}
+.home{
+    background-image: url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+}
+.home-layer{
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: .9;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    z-index: 222;
+}
+.navbar{
+    background-color: rgba(0, 0, 0, 1);
+}
+.nav-link{
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    transition: all .3s;
+    position: relative;
+}
+.nav-link::after{
+    content: "";
+    position:absolute;
+    bottom: 0;
+    left: 10;
+    width: 60%;
+    height: 2px;
+    background-color: #fff;
+    visibility: hidden;
+    transition: all .3s  ease-in-out 0s;
+}
+.nav-link:hover::after{
+    visibility: visible;
+
+}
+.nav-link:hover{
+    color: #fff;
+}
+.nav-link i{
+    font-size: .8rem;
+}
+.down-goup .dropdown-item{
+    font-size: 14px;
+    font-weight: 600;
+    color:4e4e4e;
+}
+.down-goup .dropdown-item:hover{
+    color: #0062d3;
+    background-color: #fff;
+}
+.home-content {
+    color: #fff;
+    text-align: center;
+}
+.home-content h1{
+    letter-spacing: .5px;
+    font-size: 4.5rem;
+}
+.home-content p::after{
+    content: "";
+    position:relative;
+    font-size: 2.5rem;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    animation: typing 15s  infinite;
+}
+
+@keyframes typing {
+   0%{
+    content: "D|";
+   }
+   2%{
+    content: "De|";
+   }
+   4%{
+    content: "Des|";
+   }
+   6%{
+    content: "Desi|";
+   }
+   8%{
+    content: "Desig|";
+   }
+   10%{
+    content: "Design|";
+   }
+   12%{
+    content: "Designe|";
+   }
+   14%{
+    content: "Designer|";
+   }
+   15%{
+    content: "Designer|";
+   }
+   16%{
+    content: "Designe|";
+   }
+   18%{
+    content: "Design|";
+   }
+   20%{
+    content: "Desig|";
+   }
+   22%{
+    content: "Desi|";
+   }
+   24%{
+    content: "Des|";
+   }
+   26%{
+    content: "De|";
+   }
+    28%{
+    content: "D|";
+   }
+   30%{
+    content: "De|";
+   }
+   32%{
+    content: "Dev|";
+   }
+   34%{
+    content: "Deve|";
+   }
+   36%{
+    content: "Devel|";
+   }
+   38%{
+    content: "Develo|";
+   }
+   40%{
+    content: "Develope|";
+   }
+   42%{
+    content: "Developer|";
+   }
+   44%{
+    content: "Develope|";
+   }
+   46%{
+    content: "Develop|";
+   }
+   48%{
+    content: "Develo|";
+   }
+   50%{
+    content: "Devel|";
+   }
+   51%{
+    content: "Deve|";
+   }
+   52%{
+    content: "De|";
+   }
+   53%{
+    content: "D|";
+   }
+   54%{
+    content: "|";
+   }
+   55%{
+    content: "F|";
+   }
+   56%{
+    content: "Fr|";
+   }
+   57%{
+    content: "Fre|";
+   }
+   58%{
+    content: "Free|";
+   }
+   59%{
+    content: "Freel|";
+   }
+   60%{
+    content: "Freela|";
+   }
+   61%{
+    content: "Freelan|";
+   }
+   62%{
+    content: "Freelanc|";
+   }
+   63%{
+    content: "Freelance|";
+   }
+   64%{
+    content: "Freelancer|";
+   }
+   65%{
+    content: "Freelance|";
+   }
+   66%{
+    content: "Freelanc|";
+   }
+   67%{
+    content: "Freelan|";
+   }
+   68%{
+    content: "Freela|";
+   }
+   69%{
+    content: "Freel|";
+   }
+   70%{
+    content: "Free|";
+   }
+   71%{
+    content: "Fre|";
+   }
+   72%{
+    content: "Fr|";
+   }
+   73%{
+    content: "F|";
+   }
+   74%{
+    content: "|";
+   }
+   75%{
+    content: "P|";
+   }
+   76%{
+    content: "Ph|";
+   }
+   77%{
+    content: "Pho|";
+   }
+   78%{
+    content: "Phot|";
+   }
+   79%{
+    content: "Photo|";
+   }
+   80%{
+    content: "Photog|";
+   }
+   81%{
+    content: "photogr|";
+   }
+   82%{
+    content: "Photogra|";
+   }
+   83%{
+    content: "Photograp|";
+   }
+   84%{
+    content: "Photograph|";
+   }
+   85%{
+    content: "Photographe|";
+   }
+   86%{
+    content: "Photographer|";
+   }
+   87%{
+    content: "Photographe|";
+   }
+   88%{
+    content: "Photograph|";
+   }
+   89%{
+    content: "Photograp|";
+   }
+   90%{
+    content: "Photogra|";
+  }
+   91%{
+    content: "Photogr|";
+   }
+   92%{
+    content: "Photog|";
+   }
+   93%{
+    content: "Photo|";
+   }
+   94%{
+    content: "Phot|";
+   }
+   95%{
+    content: "Pho|";
+  }
+   96%{
+    content: "Ph|";
+   }
+   97%{
+    content: "P|";
+   }
+   100%{
+    content: "|";
+  }
+}
+
+.about .card-body span{
+    font-weight: 600;
+    letter-spacing: .8
+}   
+.card{
+    border: none;
+}
+.card-body{
+    line-height: 1.8;
+}
+.about-data{
+    font-weight: 100;
+    font-size: 20px;
+    letter-spacing: .5;
+}
+.about-data .brd{
+    width: 100px;
+    height: 3px;
+    background-color: #0078ff;
+}
+.progress{
+    border-radius: 0%;
+    height: 12px;
+    background-color: #cde1f8;
+}
+
+.service-header h3{
+    font-weight: bold;
+    font-size: 3rem;
+    color: #1e1e1e;
+}
+.service-header p::after{
+    content: "";
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    position: absolute;
+    top: 150;
+    left: 540;
+    margin: auto;
+}
+.service-content .item{
+    text-align: center;
+}
+.service-content .card{
+    border-radius: 5%;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+.service-content .circle-icon{
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    border: #0078ff 10px solid;
+    border-radius: 50%;
+    transition: all .5s ease-in;
+}
+.service-content .card:hover .circle-icon{
+    background-color: #0078ff;
+    border: #cde1f8  10px solid ;
+    color: #fff;
+}
+.service-content .circle-icon i{
+    font-size: 2.5rem;
+    padding-top: 30px;
+}
+.service-content p{
+    color: #4e4e4e;
+}
+.counter{
+    background: url(../images/counters-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.counter .icon-circle{
+    width: 80px;
+    height: 80px;
+    border: #cde1f8 10px solid;
+    border-radius: 50%;
+}
+.counter .icon-circle i{
+    font-size: 1.5rem;
+    padding-top: 15px;
+    cursor: pointer;
+}
+.counter-data p:first-of-type{
+    font-weight: 400;
+    font-size: 2rem;
+}
+.work-data h2{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.work-content .card ,
+.work-content .card img{
+    border-radius: 0%;
+}
+.work-content .card{
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+.work-header h3{
+    font-weight: bold;
+    font-size: 3rem;
+    color: #1e1e1e;
+}
+.work-header p::after{
+    content: "";
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    position: absolute;
+    top: 150;
+    left: 540;
+    margin: auto;
+}
+.work-content .card-body .circle-icon{
+    width: 40px;
+    height: 40px;
+    border: #0078ff 2px solid;
+    border-radius: 50%;
+    text-align: center;
+}
+.work-content .card-body .circle-icon i{
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color: #0078ff;
+    width: 100%;
+}
+.work-content .work-img img{
+    transition: all 1s ease-in-out;
+}
+.work-content:hover .work-img img{
+    transform: scale(1.3);
+}
+.work-data p{
+    font-size: .8rem;
+    font-weight: 400;
+    padding-top: .5rem;
+}
+.work-data p > :first-child{
+    color: #0078ff;
+}
+
+.carousel-slide{
+    background: url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 80vh;
+    position: relative;
+}
+.slide-layer{
+    background-color: #0078ff;
+    opacity: .7;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+}
+.carousel-inner{
+    padding-top: 5rem;
+    position: relative;
+}
+.carousel-item img{
+    width: 15%;
+    margin: auto;
+}
+.carousel-caption{
+  width: 100%;
+  margin: auto;
+  position: relative;
+  top: 12;
+  left: 10;
+}
+.carousel-caption h5{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.carousel-caption p{
+    font-size: 1.2rem;
+    font-weight: 200;
+    width: 60%;
+    margin: auto;
+}
+.carousel-indicators .btn{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.blog-header h3{
+    font-weight: bold;
+    font-size: 3rem;
+    color: #1e1e1e;
+}
+.blog-header p::after{
+    content: "";
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    position: absolute;
+    top: 150;
+    left: 540;
+    margin: auto;
+}
+.blog .blog-card img{
+    border-radius: 0%;
+}
+.blog .blog-card{
+    position: relative;
+    border: 1px solid #d2d2d2;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+.blog .blog-card .card-body{
+    background-color: #fff;
+}
+.blog .blog-card .card-footer{
+    background-color: #f7f7f7;
+    font-weight: light;
+}
+.blog-card .card-body a{
+    text-decoration: none;
+    color: black;
+    transition: all .5s ease-in-out;
+}
+.blog-card .card-body a:hover{
+    color: #0078ff;
+}
+.blog .blog-card .card-footer .author img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.blog .card-category{
+    background-color: #0078ff;
+    color: #fff;
+    top: -10px;
+    left: 35%;
+    width: 20%;
+}
+.blog .card-category h6{
+    font-size: .7rem;
+}
+
+.contact{
+    background: url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: auto;
+    position: relative; 
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-layer{
+    background-color: #0078ff;
+    opacity: .7;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.contact-form-header h2::after{
+    content: "";
+    width: 9%;
+    height: 3px;
+    background-color: #0078ff;
+    position: absolute;
+    top: 95;
+    left: 50;
+    margin: auto;
+}
+.contact-info-header h2::after{
+    content: "";
+    width: 9%;
+    height: 3px;
+    background-color: #0078ff;
+    position: absolute;
+    top: 95;
+    left: 585;
+    margin: auto;
+}
+.contact-form input,
+.contact-form textarea{
+    border-radius: 0%;
+}
+.contact-info p{
+    font-weight: lighter;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+.list-icon{
+    font-weight: light;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+.list-icon i{
+    color: #0078ff;
+    margin-right: 10px;
+}
+.contact-info .social-icon .social-ico-circle{
+   width: 50px;
+   height: 50px;
+   border: #0078ff 3px solid;
+   border-radius: 50%;
+   text-align: center;
+}
+.contact-info .social-icon i{
+    font-size: 1.5rem;
+}
+.footer{
+    background-color: #0062d3;
+    color: #fff;
+    font-size: 1rem;
+}
+.footer a{
+    color: #fff;
+    text-decoration: none;
+}
+/* .back-to-top i{
+    font-size: 2rem;
+    color: #0078ff;
+} */
+
+@media screen and (max-width: 480px) {
+    .home-content h1{
+        font-size: 2.5rem;
+    }
+  }
